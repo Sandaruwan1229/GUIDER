@@ -3,6 +3,8 @@
 “Guider” app is a screen usage measuring app which you can control your android phone usage.
 Take control of the time spent on other apps on Android guider helps you in managing the time you spend on your phone by setting time limits on applications.
 
+**You can easliy download from** https://drive.google.com/file/d/1aOKY6XBxsEfitFyr2x7_iAAbLBB0FPkI/view?usp=sharing
+
 ### **Why Use Guider:**
 
 Guider is the app you need if you ever find yourself
