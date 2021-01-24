@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/fl_widget_apps_layout"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/rv_widget_apps"
+    android:scrollbars="vertical"
+    android:fadeScrollbars="true"
+    android:scrollbarThumbVertical="@drawable/thumb_drawable"
+    android:scrollbarTrackVertical="@drawable/line_drawable"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="8dp"
+    android:scrollbarStyle="outsideInset"
+    android:layout_height="wrap_content"/>
+<ProgressBar
+    android:layout_width="42dp"
+    android:layout_height="42dp"
+    android:layout_gravity="center"
+    android:id="@+id/pb_widget_apps_loading_indicator"
+    android:visibility="gone"/>
+</FrameLayout>

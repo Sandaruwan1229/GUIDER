@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_apps_action_refresh_list"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:orderInCategory="2"
+        android:title="@string/refresh_list"
+        app:showAsAction="" />
+    <item
+        android:id="@+id/advices"
+        android:icon="@drawable/ic_check_circle_big_green_128dp"
+        android:orderInCategory="1"
+        android:title="Advices"
+        app:showAsAction="ifRoom" />
+
+</menu>

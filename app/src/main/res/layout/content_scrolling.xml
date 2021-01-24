@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/usage_shaper">
+
+
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:elevation="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text="Usage: "
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="12dp"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/usage_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="4h 54m"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:textColor="#FFFF"
+                    android:textSize="25dp" />
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="37dp"-->
+<!--                    android:text="Unlock: "-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingTop="12dp"-->
+<!--                    android:textColor="#FFFF"-->
+<!--                    android:textSize="20dp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/unlock_times"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="49dp"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:text="54 times "-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#FFFF"-->
+<!--                    android:textSize="25dp" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone3"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <!--<LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/peak_usage_shaper"
+            android:orientation="horizontal"
+            android:elevation="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Peak Hour: "
+                    android:textStyle="bold"
+                    android:layout_marginTop="25dp"
+                    android:paddingLeft="40dp"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/peak_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="8AM - 9AM "
+                    android:textStyle="bold"
+                    android:paddingLeft="40dp"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/flame"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>>
+
+
+
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/shadow"
+            android:elevation="16dp"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/bargraph">
+
+            </com.github.mikephil.charting.charts.BarChart>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="550dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/shadow"
+            android:elevation="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top 5 Usage Apps"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginBottom="10dp"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/appListView">
+            </ListView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listView"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <ImageView
+                android:id="@+id/main_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4a3139"
+                android:scaleType="center"
+                app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4a3139"
+                android:scaleType="center"
+                app:srcCompat="@android:drawable/star_big_on" />
+
+            <ImageView
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4a3139"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/sandclock_icon_white" />
+
+            <ImageView
+                android:id="@+id/menu_apps_action_settings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#4a3139"
+                android:gravity="center"
+                android:scaleType="center"
+                app:srcCompat="@drawable/ic_settings_white_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

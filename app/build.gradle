@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+        key {
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.SEproject.guiderapp"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 9
+        versionName "1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        resConfigs "en"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            //Other parameters
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            pseudoLocalesEnabled false
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.key
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+repositories {
+    jcenter()
+    maven {url 'https://jitpack.io'}
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // AndroidX Dependencies
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.recyclerview
+    implementation deps.androidx.constraintlayout
+    implementation deps.androidx.palette
+    implementation deps.androidx.preference
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    // UI Dependencies
+    implementation 'com.github.Triggertrap:SeekArc:v1.1'
+    implementation 'com.github.AppIntro:AppIntro:5.1.0'
+    implementation 'com.getkeepsafe.taptargetview:taptargetview:1.13.0'
+
+    // BoilerPlate Removal Dependencies
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.jakewharton.timber:timber:4.6.0'
+    annotationProcessor 'net.simonvt.schematic:schematic-compiler:0.7.0'
+    implementation 'net.simonvt.schematic:schematic:0.7.0'
+
+    // Miscellaneous Dependencies
+    implementation 'com.rvalerio:fgchecker:1.1.0'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+}
+

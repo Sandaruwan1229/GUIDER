@@ -1,0 +1,29 @@
+
+ext.deps = [:]
+
+def versions = [:]
+    versions.androidx = "1.1.0"
+    versions.palette = "1.0.0"
+    versions.constraintlayout = "1.1.3"
+    versions.junit = "4.12"
+
+def androidx = [:]
+    androidx.appcompat = "androidx.appcompat:appcompat:$versions.androidx"
+    androidx.palette = "androidx.palette:palette:$versions.palette"
+    androidx.preference = "androidx.preference:preference:$versions.androidx"
+    androidx.constraintlayout = "androidx.constraintlayout:constraintlayout:$versions.constraintlayout"
+    androidx.recyclerview = "androidx.recyclerview:recyclerview:$versions.androidx"
+deps.androidx = androidx
+
+def junit = [:]
+    junit.junit = "junit:junit:$versions.junit"
+deps.junit = junit
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+    handler.maven{ url 'https://jitpack.io'}
+    handler.maven{url 'https://maven.google.com/'}
+    handler.maven{url 'https://maven.fabric.io/public'}
+}
+ext.addRepos = this.&addRepos

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!DOCTYPE resources [<!ENTITY appname "Guider">]>
+
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="refresh_list">Refresh List</string>
+    <string name="set_duration_for">Set duration for </string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="shortcut_created">Shortcut added to home screen</string>
+    <string name="tap_target_apps_title">Click to add app shortcut to home screen</string>
+    <string name="tap_target_apps_title_flipped">Click to launch app</string>
+    <string name="tap_target_apps_message">Long click to launch app</string>
+    <string name="tap_target_apps_message_flipped">Long click to add app shortcut to home screen</string>
+    <string name="pref_display_tap_target_apps">display_tap_target_apps</string>
+    <string name="pref_overlay_permission_update">pref_overlay_permission_update</string>
+    <string name="usage_permission_title">Usage Permission Access</string>
+    <string name="usage_permission_message">&appname; requires access to your app usage statistics for a better experience. The only data accessed is the name of the app being used.No data is saved.</string>
+    <string name="overlay_permission_message">&appname; requires permission to display over other apps in order to display a dialog when specified time has passed (Android 10 onwards)</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="usage_permission_instruction">Select &appname; in the list and allow usage tracking</string>
+    <string name="overlay_permission_instruction">Select &appname; in the list and allow permission to display over other apps</string>
+    <string name="usage_permission_pref">usage_permission_pref</string>
+    <string name="overlay_permission_pref">overlay_permission_pref</string>
+    <string name="never_ask_again">Never ask again</string>
+    <string name="usage_never_ask_again_pref_key">usage_never_ask_again</string>
+    <string name="pref_app_time_label">Default time for app timers</string>
+    <string name="pref_app_time_key">pref_app_time_default</string>
+    <string name="app_closed_notification_title">was closed</string>
+    <string name="app_closed_notification_subtitle">Tap to remove notification</string>
+    <string name="TARGET_APP_TITLE_KEY">target_app_title</string>
+    <string name="no_limit">No Limit</string>
+    <string name="app_running_service_notif_text">&appname; is keeping track of time in the background</string>
+    <string name="tap_for_more_info_foreground_notif">Tap for more info</string>
+    <string name="why_see_notification">Why should I  see this notification?</string>
+    <string name="why_see_notification_ans">Background tasks cannot be run efficiently without showing a notification in Android platform as a security reason, . This notification is required to keep track of the time and keep your phone usage time in control.</string>
+    <string name="pref_shortcut_icon_key">pref_shortcut_icon</string>
+    <string name="pref_shortcut_icon">Shortcut timer icon</string>
+    <string name="pref_shortcut_icon_hint">Add timer icon to home screen app shortcuts</string>
+    <string name="set_default_duration">Set default duration</string>
+    <string name="set">Set</string>
+    <string name="is_first_start">isFirstStart</string>
+    <string name="tutorial_seen_key">tutorial_seen</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="pref_display_tap_target_time_dialog">display_tap_target_time_dialog</string>
+    <string name="pref_tutorial_key">pref_tutorial_key</string>
+    <string name="intro_page2_title">Replace app shortcuts</string>
+    <string name="intro_page2_desc">Add new app shorcuts to the home screen using &appname;</string>
+    <string name="intro_page3_title">Set a timer</string>
+    <string name="intro_page3_desc">Before starting an app,specify the time you want to spend on it</string>
+    <string name="intro_page4_title">Get notified</string>
+    <string name="intro_page4_desc">A dialog will pop up when the specified time has passed</string>
+    <string name="intro_page5_title">All Set!</string>
+    <string name="intro_page5_desc">Press Done to begin</string>
+    <string name="intro_page1_desc">Take control of your phone usage</string>
+    <string name="notif_app_stopped_channel_name">App Stopped Notification</string>
+    <string name="pref_notification_done_key">pref_notification_done</string>
+    <string name="pref_notification_done_hint">Stop the background process</string>
+    <string name="pref_notification_done">Stop the Count Button</string>
+    <string name="pref_flip_long_press_key">pref_flip_long_press_key</string>
+    <string name="pref_flip_long_press_hint">Add shortcuts using long click\nLaunch app on single click</string>
+    <string name="pref_flip_long_press">Flip long click action</string>
+    <string name="intro_activity_mode">intro_activity_mode</string>
+    <string name="intro_activity_mode_tutorial">intro_activity_mode_tutorial</string>
+    <string name="intro_activity_mode_overlay_update">intro_activity_mode_overlay</string>
+    <string name="advise1">Not in control  (Normal Usage more than 5 hours per day)</string>
+    <string name="advise2">On Right Way(Normal Usage 2-5 hours per day)</string>
+    <string name="advise3">In control(Normal Usage lower 2 hours per day)</string>
+    <string name="advise4">Take a rest and refresh the mind</string>
+    <string name="advise5">Do not miss eating and cleaning</string>
+    <string name="advise6">Read a book,you are going over with entertaining</string>
+    <string name="advise7">Let us try to reduce more</string>
+    <string name="advise8">Decrease the timer more to save the valuable time</string>
+    <string name="advise9">Great job.Keep doing that.</string>
+    <string name="title_activity_advice">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
